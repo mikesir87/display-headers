@@ -1,9 +1,9 @@
 FROM node:10-alpine
 
 WORKDIR /usr/src/app/
-ADD index.js /usr/src/app/
-ADD package.json /usr/src/app/
+ADD package.json .
 RUN npm install
+ADD index.js .
  
 
 EXPOSE 8080
