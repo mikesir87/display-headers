@@ -1,4 +1,4 @@
-FROM node:4
+FROM node:10-alpine
 
 WORKDIR /usr/src/app/
 ADD index.js /usr/src/app/
