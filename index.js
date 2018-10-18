@@ -9,3 +9,6 @@ app.get('/', function(req, res) {
 app.listen(8080, function() {
   console.log("Listening on port 8080");
 });
+
+process.on('SIGINT', () => process.exit()); 
+process.on('SIGTERM', () => process.exit());
